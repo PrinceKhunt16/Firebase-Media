@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+
+.media-upload-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.media-upload-container form {
+  width: 420px;
+  height: 230px;
+  background-color: #f0f8ff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload label {
+  width: 100%;
+  padding: 12px 24px;
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.upload input[type="file"] {
+  display: none;
+}
+
+.upload input[type="text"] {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #9ed8ff;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  font-family: 'Caveat';
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.upload input[type="text"]:focus {
+  outline: none;
+}
+
+.media-upload-container form button {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #9effbb;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  font-family: 'Caveat';
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.green {
+  background-color: #9effbb;
+}
+
+.red {
+  background-color: #ff9e9e;
+}
+
+.images {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.images div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.copy-image-url {
+  cursor: pointer;
+  height: 200px;
+}
